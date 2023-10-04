@@ -1,0 +1,823 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    flex-direction: column;
+}
+
+.conteudo {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 23vw;
+    background-color: black;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.playlist {
+
+    height: 89.4vh;
+    width: fit-content;
+    background: linear-gradient(rgba(193, 126, 118, 255), rgba(149, 96, 91, 255), rgba(49, 48, 48, 0.589)60%);
+    border-radius: 1%;
+    margin: 0.3rem 0;
+}
+
+.foot {
+    display: flex;
+    height: 9vh;
+    width: 100vw;
+
+
+}
+
+.inicio {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 1rem;
+    gap: 1.5rem;
+    padding-left: 0.3rem;
+    color: #A7A7A7;
+    transition: .2s;
+}
+
+.inicio:hover {
+    color: white
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+    gap: 1.5rem;
+    color: #A7A7A7;
+    transition: 2s;
+}
+
+.buscar:hover {
+    color: white;
+}
+
+.cor-inicio {
+    background-color: rgba(49, 48, 48, 0.589);
+    height: 7.5rem;
+    border-radius: 10px;
+    width: 26.5rem;
+    margin-left: 0.2rem;
+}
+
+.biblioteca {
+    display: flex;
+    height: 75.5vh;
+    width: 21.5vw;
+    background-color: rgba(49, 48, 48, 0.59);
+    border-radius: 10px;
+    flex-direction: column;
+    color: rgb(167, 167, 167);
+}
+
+
+.icone-biblioteca {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem;
+    gap: 1.5rem;
+    height: 0;
+}
+
+.top-biblioteca {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.incones-final {
+    display: flex;
+    margin-right: 2rem;
+    height: 1rem;
+
+}
+
+.posicao-icones {
+    display: flex;
+    align-items: flex-end;
+    height: 2rem;
+}
+
+.playlist-album {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem;
+    gap: 1.5rem;
+    height: 0px;
+}
+
+.lupinha {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem;
+    height: 0;
+
+}
+
+.recentes {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #808080;
+    width: fit-content;
+    transition: all .2s;
+    display: flex;
+}
+
+.recentes:hover {
+    color: white;
+}
+
+.musicas-curtidas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: .4rem;
+}
+
+.musicas-curtidas:hover {
+    background-color: #5353534d;
+    border-radius: .5rem;
+}
+
+.imagem-coracao {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    margin: 0.8rem;
+    border-radius: 3px;
+}
+
+.nome-playlist {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.scroll {
+    overflow-y: scroll;
+
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+h5 {
+    color: #A7A7A7;
+}
+
+.seta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.duas-setas {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 3rem;
+}
+
+.top-playlist {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.final-topo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    height: 2rem;
+}
+
+.imagem-pessoa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.imagem-pessoa:hover {
+    height: 38px;
+    width: 38px;
+}
+
+.notificacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.notificacao:hover {
+    height: 37px;
+    width: 37px;
+}
+
+.instalar-aplicativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 10rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50rem;
+    gap: .40rem;
+    color: white;
+}
+
+.instalar-aplicativo:hover {
+    height: 2.5rem;
+    width: 10.5rem;
+}
+
+.instalar {
+    color: white;
+}
+
+.imagem-album {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.tamanho-imagem {
+    height: 15rem;
+}
+
+.caracteres-imagem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    padding-left: 1.5rem;
+
+
+}
+
+.tamanho-fonte {
+    font-size: 6rem;
+}
+
+.texto-album {
+    display: flex;
+    height: 14rem;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+.fonte-album {
+    font-size: .8rem;
+}
+
+.fonte-supernova {
+    font-size: .9rem;
+    font-weight: 550;
+}
+
+.cor-minutos {
+    color: #4b4848;
+}
+
+.play {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000047;
+    opacity: 32%;
+    opacity: 100%;
+    gap: 1rem;
+    height: 87rem;
+    width: 92rem;
+
+
+}
+
+.play-musica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(69, 255, 12, 0.74);
+    border-radius: 4rem;
+
+}
+
+.play-musica:hover {
+    height: 62px;
+    width: 62px;
+}
+
+.pontinhos:hover {
+    height: 3rem;
+    width: 3rem;
+}
+
+.coracao {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+
+}
+
+.hover-coracao:hover {
+    height: 2.3rem;
+}
+
+
+
+.play-seta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 12rem;
+
+
+}
+
+.posicao-icones-playlist {
+    display: flex;
+    align-items: center;
+    width: 24rem;
+    height: 4rem;
+    gap: 2rem;
+    margin-left: 2rem;
+    padding-top: 1rem;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    height: 2vh;
+    width: 74vw;
+}
+
+.posicao-titulo-caracteres {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3rem;
+}
+
+.linha {
+    width: 89.5rem;
+    margin-left: 1.5rem;
+    background: #A7A7A7;
+    opacity: 3%;
+}
+
+.musicas-play {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.musicas-play:hover {
+    background-color: #5353531f;
+}
+
+.fonte-letra-musica {
+    font-size: .9rem;
+
+}
+
+.numero-musica {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-left: 3rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.numero-musica button {
+    display: none;
+}
+
+.numero-musica:hover h4 {
+    display: none;
+}
+
+.numero-musica:hover button {
+    display: block;
+}
+
+.botao-play-numero {
+    background: transparent;
+    border-style: none;
+}
+
+
+.fonte-cantores {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+    font-size: .8rem;
+    gap: 1rem;
+    font-weight: 400;
+
+}
+
+.letra-e {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    color: white;
+    background-color: #00000047;
+    height: 1rem;
+    width: 1rem;
+
+}
+
+.posicao-nomes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width: 85rem;
+    margin-left: 5rem;
+
+}
+
+.minutos-musica {
+    font-size: 1rem;
+}
+
+.scroll-playlist {
+    overflow-y: scroll;
+    max-height: 80vh;
+
+    :-webkit-scrollbar {
+        background-color: red;
+    }
+}
+
+.datas {
+    width: 26rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.fonte-data {
+    font-size: .7rem;
+}
+
+.mais-veigh {
+    display: flex;
+    align-items: center;
+
+}
+
+.posicao-mais-veigh {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.posicao-imagem-veigh {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    position: relative;
+
+}
+
+.tamanho-imagem-veigh {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: .4rem;
+
+}
+
+.nome-imagem {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    height: 5rem;
+    flex-direction: column;
+    font-size: .8rem;
+
+}
+
+
+.cor-fundo-imagem {
+    background-color: rgba(24, 24, 24, 255);
+    height: 16rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: .5rem;
+}
+
+.posicao-imagem-pequena {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13rem;
+    justify-content: center;
+
+}
+
+.posicao-ano {
+    margin-top: 1rem;
+    display: flex;
+    width: 11rem;
+    height: 2rem
+}
+
+.pocicao-final {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-botao-verde {
+    z-index: 999;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(73, 158, 48, 0.74);
+    border-radius: 4rem;
+    top: 7rem;
+    left: 8rem;
+}
+
+
+.teste {
+    z-index: 999;
+    height: 250px;
+    width: 202px;
+    /* background-color: rgba(73, 158, 48, 0.74); */
+    /* border-radius: 4rem; */
+    top: 38rem;
+    left: 29rem;
+    opacity: 0;
+    position: absolute;
+
+}
+
+.teste:hover {
+    opacity: 100%;
+
+}
+
+.cor-fundo-imagem:hover {
+    background-color: #5f585847;
+}
+
+.imagem-foot {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.tamanho-imagem-foot {
+    display: flex;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: .4rem;
+}
+
+.nome-imagem-foot {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: .8rem;
+
+}
+
+.posicao-novo-balanço {
+    display: flex;
+    height: 1.5rem;
+    width: 14rem;
+}
+
+.nomes-cantores-foot {
+    display: flex;
+    width: 15rem;
+    margin-left: .7rem;
+}
+
+.centro-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+}
+
+.icone-repeticao {
+    display: flex;
+    height: 0rem;
+    align-items: flex-start;
+    width: 80rem;
+    height: 4rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.fonte-incon {
+    display: flex;
+    height: 1.2rem;
+}
+
+.div-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(69, 255, 12);
+    border-radius: 50%;
+}
+
+.icone-voltar {
+    display: flex;
+    align-items: center;
+    margin-left: 1.2rem;
+}
+
+.botao-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    background: #A7A7A7;
+    height: 1.6rem;
+    width: 1.6rem;
+    border-radius: 2rem;
+
+}
+
+.icone-pular-musica {
+    display: flex;
+    align-items: center;
+    margin-left: 1.2rem;
+    justify-content: center;
+    height: 1.6rem;
+}
+
+
+
+.icone-voltar-musica {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+
+}
+
+.final-foot {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+}
+
+.deixa-foto-maior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2rem;
+    width: 8rem;
+}
+
+.botao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 15rem;
+    width: 13rem;
+    opacity: 0;
+    left: 3rem;
+    top: 1rem;
+    transition: all .4s;
+}
+
+.botao-container:hover {
+    opacity: 1;
+}
+
+.music-play {
+    height: 50%;
+}
+
+.tempo-musica {
+    height: 50%;
+    display: flex;
+    font-size: .9rem;
+    gap: .9rem;
+}
+
+.barra-musica::-webkit-slider-thumb {
+    appearance: none;
+    display: block;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.barra-musica {
+    width: 40rem;
+    background-color: white;
+    appearance: none;
+    border-radius: 20px;
+    height: 0.5rem;
+    margin-top: 1.3rem;
+}
+
+.tela-toca-agora {
+    display: flex;
+    width: 2rem;
+}
+
+.microfone {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.fila-musica {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.conectar-dispositivo {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.volume {
+    width: 5.5rem;
+    margin-right: 1rem;
+    background-color: white;
+    appearance: none;
+    border-radius: 1rem;
+    height: 0.3rem;
+}
+
+.casinha {
+    color: #A7A7A7;
+}
+
+.cor-borrada-imagem {
+    box-shadow: -3px 9px 20px 8px rgb(80, 51, 49, 255);
+    width: 15rem;
+    margin-right: 1rem;
+
+}
+
+.sua-biblioteca:hover {
+    color: white;
+}
